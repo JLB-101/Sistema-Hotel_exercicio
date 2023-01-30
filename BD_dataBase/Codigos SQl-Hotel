@@ -1,0 +1,36 @@
+
+/*criar users--usuarios*/
+Query ="CREATE TABLE users(id SEQUENCIAL NOT NULL PRIMARY KEY, name varchar(200) NOT NULL,email varchar(200) NOT NULL,password varchar(50) NOT NULL,securityQ varchar(200) NOT NULL,answerQ varchar(200) NOT NULL,address varchar(200) NOT NULL,status varchar(200) NOT NULL,gender varchar(20) NOT NULL, cell varchar(50) NOT NULL);";
+/*criar reserca--Check-in*/
+
+/*==>INSERT--INSERIR*/
+/*complex*/
+Query ="INSERT INTO public.users(id, name, email, password, securityq, answerq, address, status, gender, cell)VALUES ( nextval('users_id_seq'::regclass), '"+name+"', '"+email+"', '"+password+"', '"+securityQ+"', '"+answer+"', '"+address+"', 'false', '"+gender+"', '"+cell+"');";//passando a Query para CRUD
+                   
+/*simples*/
+"INSERT INTO users VALUES (nextval'"+name+"','"+email+"','"+password+"','"+securityQ+"','"+answer+"','"+address+"','false','"+gender+"','"+cell+"');";
+//------------------------------------------------------------------------------------------
+
+"bunk bed","double bed", "bigger single bed","smaller single bed","royal bed"
+
+"Single room",
+"twin room",
+"Double room",
+"Triple room",
+"luxury room",
+"junior suite,
+"Presidential suite",
+"bridal suite",
+"honeymoon suite",
+
+CREATE TABLE room(ID SERIAL NOT NULL PRIMARY KEY,roomNr varchar(20) NOT NULL,roomType varchar(200) NOT NULL,bed varchar(200) NOT NULL,price integer NOT NULL,status varchar(50) NOT NULL);
+
+INSERT INTO public.room VALUES (nextval('room_id_seq'::regclass), '"+roomnr+"', '"+roomtype+"', '"+bed+"', '"+price+"', 'unoccupied');
+
+CREATE TABLE (ID SERIAL NOT NULL PRIMARY KEY,roomNr varchar(20) NOT NULL,roomType varchar(200) NOT NULL,bed varchar(200) NOT NULL,price integer NOT NULL,status varchar(50) NOT NULL);
+
+///==========================================
+//Reserva-Custumar-checkin-entrada
+CREATE TABLE public.reserva(id serial NOT NULL, name varchar(200) NOT NULL, cell varchar(200) NOT NULL, nation varchar(200) NOT NULL, gender varchar(200) NOT NULL, email varchar(200) NOT NULL, idProf varchar(200), address varchar(200) not null, checkin varchar(200) NOT NULL, roomNr varchar(200) NOT NULL, bed varchar(200) NOT NULL, roomType varchar(200)  NOT NULL, priceDia INTEGER NOT NULL, totalPagar varchar(200) NOT NULL, checkout varchar(200) NOT NULL);
+
+INSERT INTO public.reserva(VALUES (nextval('reserva_id_seq'::regclass), '"+name+"', '"+cell+"', '"+nation+"', '"+gender+"', '"+email+"', '"+idprof+"', '"+address+"', '"+checkin+"', '"+roomnr+"', '"+bed+"', '"+roomtype+"', '"+pricedia+"', '"+total+"', '"+checkout+"',);
