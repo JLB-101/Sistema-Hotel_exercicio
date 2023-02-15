@@ -11,9 +11,9 @@ criado por: Juliao LB | by: Juliao LB
 
 ......................................
 
-Feramentas:
+tools | Feramentas:
 
-IDE: netbeans 8.2 jdk.8.2
+IDE: netbeans 8.2, jdk.8.2
 
 BD: PostgresSQL v.10.15
 
