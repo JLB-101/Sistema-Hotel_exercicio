@@ -1,4 +1,5 @@
 # Sistema-Hotel_exercicio
+# Desktop platform
 
 Eng: OOP exercise hotel system, college
 
